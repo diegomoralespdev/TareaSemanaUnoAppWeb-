@@ -1,0 +1,97 @@
+/* resetea margenes y establece fuente */
+*{
+	margin: 0;
+	padding:0;
+	font-family: arial;	
+}
+
+/* da tamaño al contenedor general  */
+.contenedor{
+	Width: 900px;
+	
+	margin: auto;
+	margin-top: 5px;
+	
+	border-color: #A4A4A4;
+	border-width: thin;
+	border-style: solid;
+	/* permite alinear el footer en la parte inferior del contenedor  */
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
+
+img{
+	width:150px;
+	float: left;
+	margin-left: 30px;
+	margin-right: 70px;
+}
+
+header h1{
+	padding-top: 80px;
+}
+
+.cabezal {
+	margin: 0;
+	padding:0;
+	border-bottom: #5882FA;
+	border-width: medium;
+	border-style: solid;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+}
+
+.formularioSeleccionAlumnos {
+	margin-left:30px;
+}
+
+.formularioSeleccionAlumnos h4{
+	margin-top:30px;
+	margin-bottom: 30px;
+	font-size: 22px;
+}
+
+table{
+ background: #F2F2F2;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ padding-right: 0px;
+ 
+}
+
+.datos {
+	padding-left: 20px;
+}
+
+td {
+	padding-top: 3px;
+}
+
+	
+.pIndicaciones {
+	font-size: small;
+}
+
+#pNota{
+	padding-top:20px;
+}
+
+
+footer {
+	
+	font-size: small;
+	font-style: italic;
+	border-top-color: #5882FA;
+	border-width: medium;
+	border-style: solid;
+	border-bottom: transparent;
+	border-left: transparent;
+	border-right: transparent;
+}
+
+
+
+
