@@ -2,6 +2,8 @@ package Controladores;
 
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import Models.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -37,10 +39,14 @@ public class BuscarAlumno extends HttpServlet {
 			
 			Alumno unA = buscar.buscarAlumno(user, pass,Integer.parseInt(cedula));
 			
-			  response.setContentType("text/plain"); 
-			  response.setCharacterEncoding("UTF-8"); 
-			  response.getWriter().write(unA.toString());  
+			response.setContentType("text/html");
+			    PrintWriter out = response.getWriter();
 
+			    out.println("<html>");
+			    out.println("<body>");
+			    out.println("<h1>NOMBRE: "+ unA.toString() +"</h1>");
+			    out.println("</body>");
+			    out.println("</html>");
 	}
 
 	/**

@@ -85,21 +85,20 @@ public class Alumno {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Alumno [ci=");
+		builder.append("Alumno Cedula=");
 		builder.append(ci);
-		builder.append(",\n nombre=");
+		builder.append(" <br> Nombre=");
 		builder.append(nombre);
-		builder.append(",\n apellido=");
+		builder.append(" <br> Apellido=");
 		builder.append(apellido);
-		builder.append(",\n codigoCarrera=");
+		builder.append("<br> CodigoCarrera=");
 		builder.append(codigoCarrera);
-		builder.append(",\n direccion=");
+		builder.append("<br> Direccion=");
 		builder.append(direccion);
-		builder.append(",\n anioNacimiento=");
+		builder.append("<br> AnioNacimiento=");
 		builder.append(anioNacimiento);
-		builder.append(",\n archivoFoto=");
+		builder.append("<br> ArchivoFoto=");
 		builder.append(archivoFoto);
-		builder.append("]");
 		return builder.toString();
 	}
 }
