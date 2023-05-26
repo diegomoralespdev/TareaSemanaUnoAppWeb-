@@ -63,11 +63,11 @@ import java.util.ArrayList;
 						ok=false;
 					}
 				}
-				if (ci!=null && ci.intValue()>0) {
+				/*if (ci!=null && ci.intValue()>0) {
 					if (ci!=ci.intValue()) {
 						ok=false;
 					}
-				}
+				}*/
 				if (ok) {
 					return alumno;
 				}

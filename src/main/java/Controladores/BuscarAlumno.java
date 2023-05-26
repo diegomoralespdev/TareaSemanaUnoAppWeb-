@@ -29,21 +29,18 @@ public class BuscarAlumno extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		try{
 			String user = request.getParameter("nombre");
 			String pass = request.getParameter("apellido");
-			String cedula  = request.getParameter("Cedula");
+			String cedula  = request.getParameter("cedula");
 			
 			BuscarAlumnos buscar = new BuscarAlumnos();
 			
-			/*Alumno unA = buscar.buscarAlumno(user, pass, cecula);*/
+			Alumno unA = buscar.buscarAlumno(user, pass,Integer.parseInt(cedula));
 			
-			//response.getWriter().println(unA.toString());
-			
-		}
-		catch(Exception e) {
-			  //  Block of code to handle errors
-			}
+			  response.setContentType("text/plain"); 
+			  response.setCharacterEncoding("UTF-8"); 
+			  response.getWriter().write(unA.toString());  
+
 	}
 
 	/**
