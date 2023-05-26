@@ -1,6 +1,8 @@
 package Controladores;
 
+
 import java.io.IOException;
+import Models.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,9 +29,21 @@ public class BuscarAlumno extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		
-		
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		try{
+			String user = request.getParameter("nombre");
+			String pass = request.getParameter("apellido");
+			String cedula  = request.getParameter("Cedula");
+			
+			BuscarAlumnos buscar = new BuscarAlumnos();
+			
+			/*Alumno unA = buscar.buscarAlumno(user, pass, cecula);*/
+			
+			//response.getWriter().println(unA.toString());
+			
+		}
+		catch(Exception e) {
+			  //  Block of code to handle errors
+			}
 	}
 
 	/**
