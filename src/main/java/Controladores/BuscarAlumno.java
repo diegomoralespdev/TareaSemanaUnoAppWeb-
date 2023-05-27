@@ -30,12 +30,15 @@ public class BuscarAlumno extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		//**toma los datos del get **//
 			String user = request.getParameter("nombre");
 			String pass = request.getParameter("apellido");
 			String cedula  = request.getParameter("cedula");
 			
+			
+			//**instancia Buscar Alumnos**//
 			BuscarAlumnos buscar = new BuscarAlumnos();
+			
 			
 			Alumno unA = buscar.buscarAlumno(user, pass,Integer.parseInt(cedula));
 			
