@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf8"/>
+<title>Tarea 1 de Semana 1</title>
+		<link rel="stylesheet" href="Styles/style.css" type="text/css">
+</head>
+  <!----------------------------------------------------------------->
+  	<body>
+
+		<div class= "contenedor">
+			<div  class="cabezal">
+				<header>   
+					<img class="logo" src="Img/utec.jpg" alt="Logo Utec">
+				
+					<h1>Sistema de Gestión de Alumnos</h1>
+			
+				</header>
+			</div>		
+            <!----------------------------------------------------------------->	
+			<section class="formularioSeleccionAlumnos">
+		
+				<h4>Selección de Alumnos</h4>
+						
+				<form action="mostrarAlumno.jsp" method="get">
+					<table>
+						<tr>
+							<td>
+								<label class= "datos" for="nombre">Nombre:</label>
+							</td>
+							<td>
+								<input  type="text" id="nombre" name="nombre">
+							</td>
+							<td> 
+								<p class="pIndicaciones">Puede seleccionar por parte del nombre (no es case sensitive la busqueda)</p>
+							</td>
+						</tr>
+						<!------------------------------------------------------>	
+						<tr>
+							<td>
+								<label class= "datos" for="apellido">Apellido:</label>
+								</td>
+							<td>
+								<input type="text" id="apellido" name="apellido">
+							</td>
+							<td>
+								<p class="pIndicaciones">Puede seleccionar por parte del apellido (no es case sensitive la busqueda)</p> 
+							</td>							
+						</tr>
+						<!------------------------------------------------------>
+						<tr>
+							<td>
+								<label class= "datos" for="cedula">Cédula Identidad:</label>
+								</td>
+							<td>
+								<input type="number" id="cedula" name="cedula">
+							</td>
+							<td>
+								<p class="pIndicaciones">Numérico. La cedula debe ingresarse en forma completa y solo se admiten dígitos</p> 
+							</td>	
+						</tr>
+						<!------------------------------------------------------>
+						<tr>
+							<td></td>
+							<td>
+								<input type="submit" value="Mostrar Alumno">	
+							</td>
+							
+						</tr>
+					</table>
+				</form>
+				
+				<p id=pNota class="pIndicaciones">Nota: Es de destacar que se selecionará el primer alumno que satisfaga el criterio de selección</p>
+			
+			</section>
+            <!----------------------------------------------------------------->
+			<footer>
+				<p>Unidad Curricular de Programación de Aplicaciones Web - UTEC - 2023</p>
+			</footer>
+		</div>
+	</body>
+</html>
